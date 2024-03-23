@@ -1,0 +1,46 @@
+/*
+ let para variables inmutables (Su valor no cambia)
+ -dni
+ -igv
+
+ var mutables (Su valor cambia)
+ -edad
+ -ventas
+ -precio
+
+ */
+var greeting:String = "Hello, Duberly";//Definimos una variable de tipo String
+print(greeting)//Imprimimos la variable
+
+greeting="Hola, Joe";//Cambia el valor de la variable
+print(greeting)//Imprimimos el valor de la variable
+
+//Listas
+let alumnos: [String] = ["Juan","Pedro","Luis","Maria"];//Array de strings
+print(alumnos)//Imprimimos la lista de alumnos
+
+let cosas: [Any] = [true,"Hola",40,30.2] //Array de diferentes tipos de datos
+print(cosas) //Imprimimos la lista de cosas
+
+//Double and float
+let precio: Double = 20.5; //Variable de tipo Double
+let salario: Float = 30000.5;//Variable de tipo Float
+
+print(precio) //Imprimimos la variable precio
+print(salario) //Imprimimos la variable salario
+
+//Operadores de coparación
+// == >= <=
+
+//Crear una funcion que me diga si soy menor de edad
+func esMenorEdad(edad:Int)->Bool {
+  return edad < 18;
+};
+
+if(esMenorEdad(edad:12)){
+  print("Eres menor de edad")
+}
+func siEsPar(_ num: Int) -> Bool {
+  return num.isMultiple(of: 2)
+}
+print(siEsPar(2))
