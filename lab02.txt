@@ -57,11 +57,7 @@ print("El resultado es: \(x2!)")
 let sum = !x1+!x2
 print(sum)
 
-//-----------------------TERCERA PARTE------------------------------
-
-import Cocoa
-
-var greeting = "Hello, playground"
+//-------------------TERCERA PARTE---------------------
 var categoria = "tercio"
 var promedio = 19
 if categoria == "tercio" && promedio>=15 {
@@ -73,3 +69,92 @@ if categoria == "tercio" && promedio>=15 {
     default:
         print("Promedio no valido")
     }
+}
+
+//-------------------CUARTA PARTE---------------------
+
+// Definición de los tres números
+let numero1 = 10
+let numero2 = 5
+let numero3 = 8
+
+// Determinar el mayor
+var mayor = numero1
+
+if numero2 > mayor {
+    mayor = numero2
+}
+
+if numero3 > mayor {
+    mayor = numero3
+}
+
+// Determinar el menor
+var menor = numero1
+
+if numero2 < menor {
+    menor = numero2
+}
+
+if numero3 < menor {
+    menor = numero3
+}
+
+// Determinar el valor intermedio
+var intermedio = numero1
+
+if (numero1 < mayor && numero1 > menor) {
+    intermedio = numero1
+} else if (numero2 < mayor && numero2 > menor) {
+    intermedio = numero2
+} else {
+    intermedio = numero3
+}
+
+// Imprimir resultados
+print("El mayor es: \(mayor)")
+print("El menor es: \(menor)")
+print("El valor intermedio es: \(intermedio)")
+
+//-------------------QUINTA PARTE---------------------
+for t in 1...3 {
+  print("Tabla del \(t)")
+  for v in 1..<6 {
+      print("\(t) * \(v) = \(t * v)", terminator: " |")
+  }
+  print("")
+}
+
+var saludo = "Hola"
+for i in saludo {
+  print(i)
+}
+
+var letras = ["a", "b", "с", "a", "e", "f"]
+var c = 0
+for letra in letras {
+  if letra == "a" {
+      c += 1
+  }
+}
+print("Hay \(c) letras 'a'")
+
+//-------------------SEXTA PARTE---------------------
+func imprimirTriangulo(filas: Int) {
+  for i in 1...filas {
+      for _ in 1..<(filas - i + 1) {
+          print(" ", terminator: "")
+      }
+      for k in 1...(2 * i - 1) {
+          if k == 1 || k == (2 * i - 1) || i == filas {
+              print("*", terminator: "")
+          } else {
+              print(" ", terminator: "")
+          }
+      }
+      print()
+  }
+}
+
+imprimirTriangulo(filas: 5)
+//-------------------SEPTIMA PARTE---------------------
